@@ -5,6 +5,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+button, input {
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
 .wrapper {
   max-width: 1036px;
   padding: 0 30px;
