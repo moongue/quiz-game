@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  h1 {
+    font-size: 38px;
+  }
+  p {
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  &_input {
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px 40px 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &:focus, &:active {
+      outline: none;
+    }
+    &:focus{
+      &::-webkit-input-placeholder {
+        transform: translateX(70%);
+        opacity: 0;
+      }
+    }
+    &::-webkit-input-placeholder {
+      font-family: 'Roboto', sans-serif;
+      transition: .3s ease-in;
+      transform-origin: 0 50%;
+      font-size: 15px;
+    }
+    &::-moz-placeholder {
+      font-family: 'Roboto', sans-serif;
+      transition: .3s ease-in;
+      transform-origin: 0 50%;
+      font-size: 15px;
+    }
+    &:-ms-input-placeholder {
+      font-family: 'Roboto', sans-serif;
+      transition: .3s ease-in;
+      transform-origin: 0 50%;
+      font-size: 15px;
+    }
+    &:-moz-placeholder {
+      font-family: 'Roboto', sans-serif;
+      transition: .3s ease-in;
+      transform-origin: 0 50%;
+      font-size: 15px;
+    }
+  }
+  &_btn {
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 10px);
+  }
+  &_img {
+    height: 20px;
+  }
+}
+
+.user-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.default-btn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+  &:hover {
+    color: #17aa17;
+  }
+}
