@@ -10,7 +10,9 @@ function App() {
       <div className="wrapper">
         <Route path="/">
           <Header />
-          <Home />
+          <div className="wrapper-small">
+            <Home />
+          </div>
         </Route>
       </div>
     </BrowserRouter>

@@ -16,3 +16,24 @@ button, input {
   padding: 0 30px;
   margin: 0 auto;
 }
+
+.wrapper-small {
+  max-width: 826px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 20px;
+}

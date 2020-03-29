@@ -1,0 +1,39 @@
+.categories {
+  h2 {
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  &_list {
+    height: calc(100% - 49px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    border: 1px solid  #000;
+  }
+
+  &_item {
+    flex-grow: 1;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &_link {
+    height: 100%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: #17aa17;
+    }
+  }
+}
