@@ -7,7 +7,7 @@ const CategoriesCard = ({ data, title }) => (
     <h2>{title}</h2>
     <ul className="categories-card_list">
       {data.map((item) => (
-        <li className="categories-card_item">
+        <li key={item.link} className="categories-card_item">
           <Link
             className="categories-card_link"
             key={item.title}

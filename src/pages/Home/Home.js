@@ -4,6 +4,7 @@ import { Categories } from '../../components/Categories/Categories';
 import CategoriesCard from '../../components/CategoriesCard/CategoriesCard';
 import PlayerDay from '../../components/PlayerDay/PlayerDay';
 import Faq from '../../components/FAQ/Faq';
+import TableScore from '../../components/ScoreTable/TableScore';
 import './Home.scss';
 
 const Home = () => (
@@ -21,6 +22,7 @@ const Home = () => (
         <PlayerDay />
         <Faq />
       </div>
+      <TableScore />
     </div>
   </>
 );
