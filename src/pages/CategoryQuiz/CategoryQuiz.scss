@@ -1,0 +1,59 @@
+.quizzes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  animation: showCard .2s ease-in-out;
+}
+
+@keyframes showCard {
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.quiz-card {
+  flex-basis: 30%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  margin-top: 30px;
+  background: #f8f8f8;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: box-shadow .24s ease-in-out;
+
+  &:hover {
+    .quiz-card_img {
+      transform: scale(1.15);
+    }
+  }
+
+  &_wrap-img {
+    height: 170px;
+    overflow: hidden;
+  }
+
+  &_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .24s ease-in-out;
+  }
+
+  &_name {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  &_author {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #6d6d6d;
+  }
+}
