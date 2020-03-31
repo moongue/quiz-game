@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
-import CategoryQuiz from './pages/CategoryQuiz/CategoryQuiz';
+import CategoryQuizzes from './pages/CategoryQuizzes/CategoryQuizzes';
 import './App.scss';
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
             <Home />
           </div>
         </Route>
-        <Route exact path="/:id">
+        <Route exact path="/:category">
           <Header />
-          <CategoryQuiz />
+          <CategoryQuizzes />
         </Route>
       </div>
     </BrowserRouter>

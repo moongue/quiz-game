@@ -1,1 +1,0 @@
-export const FILTER_QUIZZES = 'FILTER_QUIZZES';

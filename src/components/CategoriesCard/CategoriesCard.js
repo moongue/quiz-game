@@ -1,8 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './CategoriesCard.scss';
-import { filterQuizzesByCategory } from '../../store/actions/displayQuizesAction';
 
 const CategoriesCard = (props) => (
   <div className="categories-card col">
@@ -14,7 +12,6 @@ const CategoriesCard = (props) => (
             className="categories-card_link"
             key={item.title}
             to={item.link}
-            onClick={props.filterQuizzes.bind(this, item.link)}
           >
             <p className="categories-card_title">{item.title}</p>
             <img
@@ -29,10 +26,4 @@ const CategoriesCard = (props) => (
   </div>
 );
 
-function mapDispatchToProps(dispatch) {
-  return {
-    filterQuizzes: (type) => dispatch(filterQuizzesByCategory(type)),
-  };
-}
-
-export default connect(null, mapDispatchToProps)(CategoriesCard);
+export default CategoriesCard;

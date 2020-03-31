@@ -1,6 +1,4 @@
-import { combineReducers } from 'redux';
-import displayQuizzes from './displayQuzes';
-
-export default combineReducers({
-  quizzes: displayQuizzes,
-});
+// import { combineReducers } from 'redux';
+//
+// export default combineReducers({
+// });
